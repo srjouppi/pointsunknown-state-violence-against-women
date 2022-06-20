@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Violence Against Women</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Inter:wght@300;400;700;800;&family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/01d9812a13.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article-style.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="https://srjouppi.github.io/points-unknown-coursework"> <-- Back </a>
+    </div>
+    <div class="header-container">
+        <h1>Myanmar the current worst offender for state violence against women</h1>
+        <h2>An analysis of global Armed Comflict Location and Event Data shows Myanmar's military conducted frequent attacks against women over the past year.</h2>
+        <span class="dateline">June 20, 2022</span>
+        <hr/>
+    </div>
+    
+    <div class="text-container">
+        <p>In the months after the February 2021 military coup in Myanmar, human rights in the country deteriorated, according to a recent <a href="https://www.amnesty.org/en/latest/news/2022/05/myanmar-military-onslaught-in-eastern-states-amounts-to-collective-punishment/" target="_blank">Amnesty International report</a> that accused state forces of crimes against humanity. An analysis of a <a href="https://acleddata.com/data-export-tool/" targe="_blank">crowd-sourced database</a> of conflicts worldwide showed that over the past year, military and police forces in Myanmar have attacked, sexually assaulted and abducted women on at least 88 different occasions resulting in 55 deaths, the most out of any country. The violence is ongoing -- nearly half of these events have taken place within the past five months. </p>
+    </div>
+    <div class="row-container">
+        <div class="chart-container">  
+            <div id='map'>
+                <div id="title" class="title">
+                    <h1>State Violence Against Women</h1>
+                    <p><em>Zoom out to see global accounts of state violence against women. Click on the points to expand details for each event.</em></p>
+                    <div id="fatalities-legend" class="legend2">
+                        <h4>Fatalities</h4>
+                        <div><span style="background-color: 'black'"></span>&#8594;<span style="background-color: 'black'; height:20px; width:20px"></span> 0 - 8 fatalities</div>
+                    </div>
+                    <div id="eventType-legend" class="legend">
+                        <h4>Type of Event</h4>
+                        <div><span style="background-color: #FFCD38"></span>Attack</div>
+                        <div><span style="background-color: #FF4949"></span>Sexual Violence</div>
+                        <div><span style="background-color: #A760FF"></span>Abduction/Forced Disappearance</div>
+
+                        <p><em>Data: ACLEDdata.com | violence against civilians by state forces (6/1/21 - 6/10/22)</em></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-container">
+        <p>Most of Myanmar's violence against women has consisted of physical attacks, including torturing and killing civillians. There have been 14 accounts of state forces raping women and six accounts of taking women hostage or using them as human shields.</p>
+        <p>“The world’s attention may have moved away from Myanmar since last year’s coup, but civilians continue to pay a high price," said Rawya Rageh in Amensty International's recent report. Rageh is a senior crisis adviser who spent months interviewing dozens of people in Myanmar. "The military’s ongoing assault on civilians in eastern Myanmar has been widespread and systematic, likely amounting to crimes against humanity.”</p>
+        <p>According to the Armed Conflict Location and Event Database, over the past year more than 1,500 civilians have died at the hands of the country's military.</p>
+        <p></p>
+        <p><em>Data wrangling and sources in <a href="https://colab.research.google.com/drive/1eLaILN5zZkV7fwgOZ4_k2s3f1lrwIpsU?usp=sharing" target="_blank">this Google Colab notebook.</a></em></p>
+</div>
+    <script type='text/javascript' src="map.js"></script>
+</body>
+</html>
