@@ -20,7 +20,7 @@ map.on("load", function () {
           type: "circle",
           source: {
               type: "geojson",
-              data: "https://raw.githubusercontent.com/srjouppi/pointsunknown-datasets/main/govAgainstWomen.geojson",
+              data: "data/govAgainstWomen.geojson",
           },
           
           paint: {
@@ -31,11 +31,17 @@ map.on("load", function () {
             'circle-radius': {
             'property': "fatalities",
             'stops': [
-            [0, 3],
-            [8, 12]
+            [0, 8],
+            [8, 20]
             ],
              },
-             "circle-opacity":.7,
+             "circle-opacity":["step",["get", "age_of_event"],
+             1,
+             20, .9,
+             50, .5,
+             200, .25,
+            
+            ],
              "circle-color": [
                 "match",
                 ["get", "sub_event_type"],
